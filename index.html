@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="script.js" defer></script>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Note App</h1>
+		<div class="input-field">
+			<input type="text" class="input-title" placeholder="Note Title" />
+			<input type="text" class="input-status" placeholder="Note Status" />
+			<button class="submit-btn">Add Note</button>
+		</div>
+
+		<div class="status">
+			<button class="status-btn" data-filter="*">All</button>
+			<button class="status-btn" data-filter="active">Active</button>
+			<button class="status-btn" data-filter="completed">Completed</button>
+		</div>
+		<div class="note-container">
+			<div class="title">
+				<span>Note</span>
+				<span>Status</span>
+			</div>
+			<div class="notes"></div>
+		</div>
+	</body>
+</html>
